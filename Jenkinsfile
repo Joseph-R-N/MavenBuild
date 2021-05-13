@@ -12,7 +12,7 @@ node('master') {
 	}
 
 	stage ('Sonar Analysis'){
-		sh 'mvn sonar:sonar -Dsonar.host.url=http://52.90.114.217:9000 -Dsonar.login=3f2d512066c968a048575e6a0001e6bcffe61601'
+		sh 'mvn sonar:sonar -Dsonar.host.url=http://vmpl3001.centralus.cloudapp.azure.com:9000 -Dsonar.login=f32c4b83414b4340449af59f3d8ad82248197bcd'
 	}
 
 	stage ('Archive Artifacts'){
